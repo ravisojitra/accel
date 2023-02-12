@@ -1,0 +1,41 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: {
+      sm: { min: "200px", max: "550px" },
+      md: { min: "551px", max: "1050px" },
+    },
+    extend: {
+      colors: {
+        gray_700: "#5d646f",
+        gray_400: "#c2c2c2",
+        gray_500: "#969da6",
+        gray_900_54: "#11182754",
+        gray_200_7e: "#e6e8ea7e",
+        white_A700_a2: "#ffffffa2",
+        gray_900: "#25282d",
+        gray_200: "#e6e8ea",
+        gray_50: "#f9fafa",
+        gray_100: "#f4f5f6",
+        bluegray_800: "#464b53",
+        deep_purple_50: "#ebe5f6",
+        bluegray_700: "#545558",
+        black_900: "#000000",
+        indigo_900: "#270157",
+        cyan_50: "#d6ffff",
+        white_A700: "#ffffff",
+        cyan_A700: "#17b5cb",
+        black_900_26: "#00000026",
+      },
+      borderRadius: { radius8: "8px", radius12: "12px", radius50: "50%" },
+      fontFamily: { inter: "Inter" },
+      borderWidth: { bw: "px" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
