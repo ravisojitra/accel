@@ -1,20 +1,8 @@
 import React from "react";
 
 import { Text, Input, Button, Line, Img } from "components";
-import { useNavigate } from "react-router-dom";
-import { useGoogleLogin } from "@react-oauth/google";
 
 const LoginPage = () => {
-  const navigate = useNavigate();
-  const googleSignIn = useGoogleLogin({
-    onSuccess: (res) => {
-      console.log("res", res);
-      alert("Login successfull. 😍");
-    },
-    onFailure: (err) => {
-      alert(err?.details ?? "Failed to login. 😢");
-    },
-  });
 
   return (
     <>
@@ -71,18 +59,18 @@ const LoginPage = () => {
             </div>
             <Button
               className="common-pointer cursor-pointer font-semibold leading-[normal] text-[14px] text-center text-white_A700 w-[100%]"
-              onClick={() => navigate("")}
+           
             >
               Continue
             </Button>
             <Line className="bg-gray_100 h-[1px] w-[100%]" />
             <div
               className="common-pointer bg-white_A700 border border-gray_100 border-solid flex flex-col items-center justify-center px-[16px] py-[10px] rounded-radius8 w-[100%]"
-              onClick={googleSignIn}
+       
             >
               <div
                 className="common-pointer flex flex-row gap-[10px] items-center justify-center w-[auto]"
-                onClick={googleSignIn}
+       
               >
                 <Img
                   src="images/img_googleglogo.png"
