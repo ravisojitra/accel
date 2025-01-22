@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, Input, Button, Line, Img } from "components";
+import { Text, Input, Button, Line } from "components";
 
 const LoginPage = () => {
 
